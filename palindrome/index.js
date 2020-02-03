@@ -5,7 +5,16 @@
 //   palindrome("Madam") === true
 //   palindrome("love") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+  str = str.toLowerCase();
+const res = str.split("").reverse().join("");
+  if (str === res){
+    return true;
+  }  
+  else {
+    return false;
+  }
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
